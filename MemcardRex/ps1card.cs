@@ -277,13 +277,10 @@ namespace MemcardRex
                 }
 
                 //Convert save name from Shift-JIS to UTF-16 as ASCII equivalent
-                saveName[slotNumber,0] = SJISC.convertSJIStoASCII(tempByteArray);
-
-                //Convert save name from Shift-JIS to UTF-16
-                saveName[slotNumber,1] = Encoding.GetEncoding(932).GetString(tempByteArray);
+                saveName[slotNumber,0] = saveName[slotNumber,1] = SJISC.convertSJIStoASCII(tempByteArray);
 
                 //Check if the title converted properly, get ASCII if it didn't
-                if (saveName[slotNumber, 0] == null) saveName[slotNumber, 0] = Encoding.Default.GetString(tempByteArray,0,32);
+                if (saveName[slotNumber, 0] == null) saveName[slotNumber, 0] = saveName[slotNumber, 1] = Encoding.Default.GetString(tempByteArray,0,32);
             }
         }
 
