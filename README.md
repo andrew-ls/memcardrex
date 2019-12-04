@@ -4,7 +4,6 @@
 
 <b>Requirements:</b>
 * .NET Framework 3.5.
-* Windows® Vista™ or 7 for the glass status bar.
 
 <b>Supported Memory Card formats:</b>
 * ePSXe/PSEmu Pro Memory Card(*.mcr)

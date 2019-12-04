@@ -33,9 +33,6 @@ namespace MemcardRex
             hostFrm = hostForm;
             loadedMetadata = plgMetadata;
 
-            //Apply the native theme to the listview
-            //glassSupport.SetWindowTheme(pluginListView.Handle, "Explorer", null);
-
             //Check if list contains any members
             if (loadedMetadata.Count > 0)
             {
